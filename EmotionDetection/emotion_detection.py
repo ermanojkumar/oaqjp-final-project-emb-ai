@@ -1,10 +1,6 @@
 import requests
 import json
 
-#URL: 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
-#Headers: {"grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"}
-#Input json: { "raw_document": { "text": text_to_analyze } }
-
 def emotion_detector(text_to_analyze):
     """
     Analyze the input text and return the detected emotions.
@@ -30,7 +26,7 @@ def emotion_detector(text_to_analyze):
             "sadness": None,
             "dominant_emotion": None
         }
-    
+
     formatted_response = json.loads(response.text)
 
     emotion_scores = formatted_response['emotionPredictions'][0]['emotion']
