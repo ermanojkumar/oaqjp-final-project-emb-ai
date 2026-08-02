@@ -13,6 +13,8 @@ This project analyzes the emotions expressed in a given text using the IBM Watso
 ```bash
 pip install -r requirements.txt
 python3 -m pip install requests
+python3 -m pip show flask
+python3 -m pip install flask
 ```
 
 ## Usage
