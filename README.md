@@ -1,5 +1,7 @@
 # Emotion Detection with Embedded AI
 
+Final project
+
 A small web application that analyzes text and detects the emotions expressed in it (anger, disgust, fear, joy, sadness) using IBM Watson NLP's Emotion Predict service.
 
 ## How it works
